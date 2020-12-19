@@ -4,4 +4,4 @@ Then encrypt the same url with our own Server URL and the encrypted key.
 The key used for encryption is a custom generated key.
 The mapping for the unique key and the request URL is done in the database
 
-Note: It is a UI based application made on Laravel Admin Package
+Note: It is an UI based application made on Laravel Admin Package

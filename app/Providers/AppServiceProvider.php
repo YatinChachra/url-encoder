@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Encrypter\UrlEncrypter;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Register Facades
+        $this->app->bind('url-encrypt', function () {
+            return new UrlEncrypter();
+        });
     }
 }
